@@ -1,0 +1,243 @@
+<!-- Sample data file for use in the Oilwell Monitor simulation    -->
+<!-- NOTE: Do NOT hard code the number of wells or sensors as this -->
+<!--       could change in the future.                             --> 
+
+<OILFIELDDATA>
+	<WELLS>
+		<WELL>
+			<WELLID>
+				12-3456
+			</WELLID>
+			<OPERATOR>
+				US Oil
+			</OPERATOR>
+		</WELL>
+		<WELL>
+			<WELLID>
+				12-4567
+			</WELLID>
+			<OPERATOR>
+				US Oil
+			</OPERATOR>
+		</WELL>
+		<WELL>
+			<WELLID>
+				14-5678
+			</WELLID>
+			<OPERATOR>
+				US Oil
+			</OPERATOR>
+		</WELL>
+		<WELL>
+			<WELLID>
+				22-9876
+			</WELLID>
+			<OPERATOR>
+				Random Oil
+			</OPERATOR>
+		</WELL>
+		<WELL>
+			<WELLID>
+				21-8765
+			</WELLID>
+			<OPERATOR>
+				Random Oil
+			</OPERATOR>
+		</WELL>
+		<WELL>
+			<WELLID>
+				22-7654
+			</WELLID>
+			<OPERATOR>
+				Random Oil
+			</OPERATOR>
+		</WELL>
+	</WELLS>
+	<SENSORS>
+		<SENSOR>
+			<TYPE>
+				BIT_DEPTH
+			</TYPE>
+			<CLASS>
+				SensorBitDepth
+			</CLASS>
+			<DISPLAYNAME>
+				Bit Depth
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				UNDEFINED
+			</MAXVALUE>
+			<UNITS>
+				feet
+			</UNITS>
+			<UNITABBREVIATION>
+				ft
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				HOLE_DEPTH
+			</TYPE>
+			<CLASS>
+				SensorHoleDepth
+			</CLASS>
+			<DISPLAYNAME>
+				Hole Depth
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				UNDEFINED
+			</MAXVALUE>
+			<UNITS>
+				feet
+			</UNITS>
+			<UNITABBREVIATION>
+				ft
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				RATE_OF_PENETRATION
+			</TYPE>
+			<CLASS>
+				SensorROP
+			</CLASS>
+			<DISPLAYNAME>
+				ROP
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				300.0
+			</MAXVALUE>
+			<UNITS>
+				feet per hour
+			</UNITS>
+			<UNITABBREVIATION>
+				ft/hr
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				PUMP_PRESSURE
+			</TYPE>
+			<CLASS>
+				SensorPumpPressure
+			</CLASS>
+			<DISPLAYNAME>
+				Pump Pres.
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				2000.0
+			</MAXVALUE>
+			<UNITS>
+				pounds per square inch
+			</UNITS>
+			<UNITABBREVIATION>
+				PSI
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				CASING_PRESSURE
+			</TYPE>
+			<CLASS>
+				SensorCasingPressure
+			</CLASS>
+			<DISPLAYNAME>
+				Casing Pres.
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				100.0
+			</MAXVALUE>
+			<UNITS>
+				pounds per square inch
+			</UNITS>
+			<UNITABBREVIATION>
+				PSI
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				FLOW_OUT
+			</TYPE>
+			<CLASS>
+				SensorFlowOut
+			</CLASS>
+			<DISPLAYNAME>
+				Flow Out
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				100.0
+			</MAXVALUE>
+			<UNITS>
+				percent
+			</UNITS>
+			<UNITABBREVIATION>
+				%
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				TORQUE_MAX
+			</TYPE>
+			<CLASS>
+				SensorTorqueMax
+			</CLASS>
+			<DISPLAYNAME>
+				Torque Max
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				100.0
+			</MAXVALUE>
+			<UNITS>
+				kilo-footpounds
+			</UNITS>
+			<UNITABBREVIATION>
+				kflb
+			</UNITABBREVIATION>
+		</SENSOR>
+		<SENSOR>
+			<TYPE>
+				MUD_PIT_VOLUME
+			</TYPE>
+			<CLASS>
+				SensorMudPitVolume
+			</CLASS>
+			<DISPLAYNAME>
+				Mud Pit Vol.
+			</DISPLAYNAME>
+			<MINVALUE>
+				0.0
+			</MINVALUE>
+			<MAXVALUE>
+				500.0
+			</MAXVALUE>
+			<UNITS>
+				barrels
+			</UNITS>
+			<UNITABBREVIATION>
+				bbl
+			</UNITABBREVIATION>
+		</SENSOR>
+	</SENSORS>
+</OILFIELDDATA>
+

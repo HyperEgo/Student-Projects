@@ -1,0 +1,13 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">Weather Monkey</string>
+    <string name="monkey_intro">Welcome to Weather Monkey!\nReal time weather.</string>
+    <string name="action_settings">Settings</string>
+    <string name="title_activity_second">Weather Report</string>
+    <string name="hint_callsign">Enter Callsign or ID</string>
+    <string name="aprs_net">APRS Net\n(rotate.aprs.net)</string>
+    <string name="uah_net">UAH Blackhawk\n(blackhawk.eng.uah.edu)</string>
+    <string name="test_string">Test label for Second Activity</string>
+
+</resources>

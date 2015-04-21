@@ -1,0 +1,33 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/cropped_mercator_no_degrees.png</file>
+        <file>images/FTDX3000-scope.jpg</file>
+        <file>images/oe_client_logo.jpg</file>
+        <file>images/starry_sky.jpg</file>
+        <file>images/test_starry_back.png</file>
+        <file>images/test_starry_night_back.png</file>
+        <file>images/usa_mercator_map_no_degrees.png</file>
+        <file>images/satpics/sat001.png</file>
+        <file>images/satpics/sat002.png</file>
+        <file>images/satpics/sat003.png</file>
+        <file>images/satpics/sat004.png</file>
+        <file>images/satpics/sat005.png</file>
+        <file>images/satpics/sat006.png</file>
+        <file>images/satpics/sat007.png</file>
+        <file>images/satpics/sat008.png</file>
+        <file>images/satpics/sat009.png</file>
+        <file>images/satpics/sat010.png</file>
+        <file>images/satpics/sat011.png</file>
+        <file>images/satpics/sat012.png</file>
+        <file>images/satpics/sat013.png</file>
+        <file>images/satpics/sat014.png</file>
+        <file>images/satpics/sat015.png</file>
+        <file>images/satpics/sat016.png</file>
+        <file>images/satpics/sat017.png</file>
+        <file>images/satpics/sat018.png</file>
+        <file>images/satpics/sat019.png</file>
+        <file>images/satpics/sat020.png</file>
+        <file>images/test_starry_night_backJWJ.png</file>
+        <file>images/test_starry_night_backJWJ3.png</file>
+    </qresource>
+</RCC>

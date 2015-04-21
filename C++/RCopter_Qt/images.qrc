@@ -1,0 +1,14 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/arrow_down_grey.png</file>
+        <file>images/arrow_left_grey.png</file>
+        <file>images/arrow_right_grey.png</file>
+        <file>images/arrow_up_grey.png</file>
+        <file>images/arrow_down_red.png</file>
+        <file>images/arrow_left_red.png</file>
+        <file>images/arrow_right_red.png</file>
+        <file>images/arrow_up_red.png</file>
+        <file>images/green_lock.png</file>
+        <file>images/tron_console02.jpg</file>
+    </qresource>
+</RCC>

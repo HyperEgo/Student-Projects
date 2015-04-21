@@ -1,0 +1,112 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+        <ScrollView
+        android:layout_gravity="center_horizontal"
+        android:layout_width="760dp"
+        android:layout_height="wrap_content">
+
+        <HorizontalScrollView
+            android:layout_gravity="center_horizontal"
+            android:layout_width="match_parent"
+            android:layout_height="wrap_content">
+
+            <LinearLayout
+                android:orientation="horizontal"
+                android:layout_width="match_parent"
+                android:layout_height="wrap_content">
+
+                <ImageView
+                    android:id="@+id/imgMap"
+                    android:src="@drawable/mercator_stars_no_grid"
+                    android:layout_gravity="center_horizontal"
+                    android:layout_marginBottom="15dp"
+                    android:layout_width="900dp"
+                    android:layout_height="421dp" />
+
+            </LinearLayout>
+        </HorizontalScrollView>
+        </ScrollView>
+
+        <LinearLayout
+            android:orientation="horizontal"
+            android:layout_marginBottom="50dp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content">
+
+            <TextView
+                android:id="@+id/vLat"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:textStyle="italic"
+                android:text="Latitude : "
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtLat"
+                android:hint="Lat"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="80dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:maxLength="5"
+                android:textSize="25dp"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <TextView
+                android:id="@+id/vLong"
+                android:layout_width="wrap_content"
+                android:layout_height="wrap_content"
+                android:layout_marginRight="7dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:textColor="#000000"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:textStyle="italic"
+                android:text="Longitude : "
+                android:singleLine="true"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+            <EditText
+                android:id="@+id/txtLong"
+                android:hint="Long"
+                android:layout_height="wrap_content"
+                android:layout_width="wrap_content"
+                android:layout_marginRight="15dp"
+                android:layout_marginBottom="15dp"
+                android:paddingTop="2dp"
+                android:paddingBottom="2dp"
+                android:paddingLeft="5dp"
+                android:paddingRight="5dp"
+                android:singleLine="true"
+                android:maxLength="7"
+                android:textSize="25dp"
+                android:inputType="numberDecimal"
+                android:textColor="#000000"
+                style="?android:attr/spinnerDropDownItemStyle"
+                android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        </LinearLayout>
+
+</LinearLayout>

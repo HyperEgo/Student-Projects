@@ -1,0 +1,7 @@
+<RCC>
+    <qresource prefix="/">
+        <file>images/Logo.jpg</file>
+        <file>images/orbital_eye_logo.png</file>
+        <file>images/orbital_eye_logo_02.png</file>
+    </qresource>
+</RCC>

@@ -1,0 +1,38 @@
+<?xml version="1.0" encoding="utf-8"?>
+
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    android:orientation="vertical"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent">
+
+
+    <TextView
+        android:id="@+id/textView1"
+        android:layout_marginTop="5dp"
+        android:paddingTop="5dp"
+        android:paddingBottom="5dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="5dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"
+        android:textColor="#000000"
+        android:text="Edit > Date : "
+        android:textAppearance="?android:attr/textAppearanceLarge" />
+
+
+    <EditText
+        android:id="@+id/ALERT_DIALOG_EDIT_TEXT1"
+        android:layout_height="50dp"
+        android:layout_width="match_parent"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:maxHeight="100dp"
+        android:singleLine="true"
+        android:maxLength="28"
+        android:textColor="#000000"
+        android:textSize="25sp"
+        android:gravity="top|left" >
+        <requestFocus />
+    </EditText>
+
+</LinearLayout>

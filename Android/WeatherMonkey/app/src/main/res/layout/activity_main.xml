@@ -1,0 +1,133 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/background_image"
+    android:id="@+id/parent"
+    tools:context=".main">
+
+    <TextView
+        android:id="@+id/txtStart"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginBottom="40dp"
+        android:textSize="30sp"
+        android:textColor="#ffffff1a"
+        android:textStyle="bold"
+        android:background="@drawable/wooden_plank"
+        android:layout_gravity="center"
+        android:gravity="center"
+        android:text="@string/monkey_intro"
+        style="?android:absListViewStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content" />
+
+
+    <EditText
+        android:id="@+id/txtCallsign"
+        android:hint="@string/hint_callsign"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:layout_width="wrap_content"
+        android:layout_height="?android:attr/listPreferredItemHeight"
+        android:background="#ffffff"
+        android:inputType="text"
+        android:textStyle="italic"
+        android:textSize="25sp"
+        android:digits="abcdefghijklmnopqrstuvwxyz1234567890ABCDEFGHIJKLMNOPQRSTUVWXYZ"
+        android:maxLength="6"
+        android:singleLine="true"/>
+
+    <TextView
+        android:id="@+id/txtLocale"
+        style="?android:attr/spinnerDropDownItemStyle"
+        android:textColor="#ffffff1a"
+        android:background="#ff29d70e"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:layout_marginRight="20dp"
+        android:text="Select Locale"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <Spinner
+        android:id="@+id/spinLocale"
+        android:layout_marginLeft="20dp"
+        android:layout_marginBottom="40dp"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+    </Spinner>
+
+    <TextView
+        android:textColor="#ffffff1a"
+        android:background="#ff29d70e"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:layout_marginLeft="20dp"
+        android:text="Select Server"
+        android:textSize="25sp"
+        android:textStyle="italic"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content"/>
+
+    <RadioGroup
+        android:id="@+id/rdbGp1"
+        android:layout_marginTop="7dp"
+        android:layout_marginLeft="20dp"
+        android:paddingTop="2dp"
+        android:paddingBottom="2dp"
+        android:paddingLeft="5dp"
+        android:paddingRight="5dp"
+        android:background="#ffffff1a"
+        android:orientation="vertical"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <RadioButton
+            android:id="@+id/rdb1"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content"
+            android:text="@string/aprs_net"
+            android:layout_marginBottom="15dp"/>
+
+        <RadioButton
+            android:id="@+id/rdb2"
+            android:textStyle="italic"
+            android:textSize="25sp"
+            android:text="@string/uah_net"
+            android:layout_width="wrap_content"
+            android:layout_height="wrap_content" />
+    </RadioGroup>
+
+    <Button
+        android:id="@+id/btnProceed"
+        android:textSize="25sp"
+        android:text="OK"
+        android:textStyle="bold"
+        android:gravity="center|bottom"
+        android:background="@drawable/banana_button"
+        android:scaleType="centerCrop"
+        android:layout_marginTop="30dp"
+        android:layout_marginLeft="80dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="15dp"
+        android:onClick="onClick"
+        android:layout_width="150dp"
+        android:layout_height="90dp" />
+
+</LinearLayout>

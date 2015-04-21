@@ -1,0 +1,457 @@
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:paddingLeft="@dimen/activity_horizontal_margin"
+    android:paddingRight="@dimen/activity_horizontal_margin"
+    android:paddingTop="@dimen/activity_vertical_margin"
+    android:paddingBottom="@dimen/activity_vertical_margin"
+    android:orientation="vertical"
+    android:background="@drawable/monkey_party"
+    tools:context="edu.uah.cpe.weathermonkey.app.SecondActivity">
+
+    <Button
+        android:id="@+id/btnBack"
+        android:textSize="25sp"
+        android:text="Back"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|bottom"
+        android:background="@drawable/banana_button"
+        android:layout_marginTop="10dp"
+        android:layout_marginLeft="100dp"
+        android:layout_marginBottom="30dp"
+        android:onClick="onConnect"
+        android:paddingLeft="20dp"
+        android:paddingBottom="10dp"
+        android:layout_width="150dp"
+        android:layout_height="90dp" >
+    <requestFocus />
+    </Button>
+
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView1"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Last Report : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtReport"
+            android:hint="Reporting Callsign"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView2"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Time Stamp : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtTime"
+            android:hint="Time Stamp | Position"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView3"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Temp : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtTemp"
+            android:hint="Temperature - Fahrenheit"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView4"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Wind Gust : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtWGust"
+            android:hint="Wind Gust (mph)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView10"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Wind Spd : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtWSpeed"
+            android:hint="Wind Speed (mph)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView5"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Wind Direct : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtWDirection"
+            android:hint="Wind Direction (degrees)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView6"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="B. Pressure : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtBPressure"
+            android:hint="Barometric Pressure"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView7"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Humidity : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtHumidity"
+            android:hint="Humidity (percentage)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView8"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Rain Hour : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtRainHour"
+            android:hint="Rainfall Last Hour (1/100 inch)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+    <LinearLayout
+        android:layout_marginRight="20dp"
+        android:layout_marginBottom="20dp"
+        android:orientation="horizontal"
+        android:layout_width="wrap_content"
+        android:layout_height="wrap_content">
+
+        <TextView
+            android:id="@+id/txtView9"
+            android:layout_width="150dp"
+            android:layout_height="wrap_content"
+            android:layout_marginRight="15dp"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:textColor="#ffffff1a"
+            android:background="#ff29d70e"
+            android:textStyle="italic"
+            android:text="Rain Night : "
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+
+        <TextView
+            android:id="@+id/txtRainNight"
+            android:hint="Rainfall Since Midnight (1/100 inch)"
+            android:layout_height="wrap_content"
+            android:layout_width="wrap_content"
+            android:paddingTop="2dp"
+            android:paddingBottom="2dp"
+            android:paddingLeft="5dp"
+            android:paddingRight="5dp"
+            android:singleLine="true"
+            android:textColor="#000000"
+            android:background="#ffffff1a"
+            android:textAppearance="?android:attr/textAppearanceLarge" />
+    </LinearLayout>
+
+<LinearLayout
+    android:orientation="horizontal"
+    android:layout_marginLeft="15dp"
+    android:paddingBottom="15dp"
+    android:paddingRight="15dp"
+    android:layout_width="wrap_content"
+    android:layout_height="130dp">
+
+
+    <Button
+        android:id="@+id/btnConnect"
+        android:onClick="onConnect"
+        android:textSize="25sp"
+        android:text="Connect"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|bottom"
+        android:background="@drawable/banana_button"
+        android:layout_marginLeft="60dp"
+        android:layout_marginRight="15dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="150dp"
+        android:layout_height="90dp" />
+
+
+    <Button
+        android:id="@+id/btnCancel"
+        android:onClick="onConnect"
+        android:textSize="25sp"
+        android:text="Cancel"
+        android:textStyle="bold"
+        android:layout_gravity="center_vertical"
+        android:gravity="center|bottom"
+        android:background="@drawable/banana_button"
+        android:layout_marginLeft="60dp"
+        android:paddingLeft="15dp"
+        android:paddingBottom="15dp"
+        android:layout_width="150dp"
+        android:layout_height="90dp" />
+
+    </LinearLayout>
+
+    <ProgressBar
+        android:id="@+id/progBar"
+        android:indeterminateDrawable="@drawable/monkey_show"
+        android:layout_marginLeft="210dp"
+        android:paddingTop="10dp"
+        android:paddingBottom="10dp"
+        android:paddingLeft="10dp"
+        android:paddingRight="10dp"
+        android:layout_width="145dp"
+        android:layout_height="95dp" />
+
+</LinearLayout>
